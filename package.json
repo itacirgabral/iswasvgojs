@@ -1,0 +1,33 @@
+{
+  "name": "@iswa/svgojs",
+  "version": "1.0.0",
+  "description": "International SignWriting Alphabet as Optimized SVG Package",
+  "main": "index.js",
+  "type": "module",
+  "devDependencies": {
+    "@iswa/svg": "^1.0.4",
+    "shelljs": "^0.8.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node --es-module-specifier-resolution=node ./index.js",
+    "task:clofol": "node --es-module-specifier-resolution=node ./task/cloneFolder.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/itacirgabral/iswasvgojs.git"
+  },
+  "keywords": [
+    "iswa",
+    "signwriting",
+    "deaf",
+    "fonts",
+    "svg"
+  ],
+  "author": "itacir gabral",
+  "license": "OFL-1.1",
+  "bugs": {
+    "url": "https://github.com/itacirgabral/iswasvgojs/issues"
+  },
+  "homepage": "https://github.com/itacirgabral/iswasvgojs#readme"
+}
