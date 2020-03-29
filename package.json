@@ -6,12 +6,14 @@
   "type": "module",
   "devDependencies": {
     "@iswa/svg": "^1.0.4",
-    "shelljs": "^0.8.3"
+    "shelljs": "^0.8.3",
+    "svgo": "^1.3.2"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node --es-module-specifier-resolution=node ./index.js",
-    "task:clofol": "node --es-module-specifier-resolution=node ./task/cloneFolder.js"
+    "task:clofol": "node --es-module-specifier-resolution=node ./task/cloneFolder.js",
+    "task:o1th": "node --es-module-specifier-resolution=node ./task/optimizeFirst.js"
   },
   "repository": {
     "type": "git",

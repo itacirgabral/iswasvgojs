@@ -1,6 +1,3 @@
-import iswasvg from '@iswa/svg'
+import firstSvg from './src/01-01/01-01-001/01-01-001-01-01.js'
 
-const iswaPath = Object.keys(iswasvg)[0]
-const iswaTree = iswasvg[iswaPath]
-
-console.dir(iswaTree)
+console.log(firstSvg)
