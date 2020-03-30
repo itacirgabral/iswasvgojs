@@ -1,0 +1,3 @@
+const svg = `<svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="11" height="4"><path d="M7.5 0C11 0 11 4 11 4H9s0-2-1.5-2-1.5 2-4 2C0 4 0 0 0 0h2s0 2 1.5 2 1.5-2 4-2z"/></svg>`
+  
+export default svg

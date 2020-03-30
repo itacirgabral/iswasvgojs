@@ -13,7 +13,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node --es-module-specifier-resolution=node ./index.js",
     "task:clofol": "node --es-module-specifier-resolution=node ./task/cloneFolder.js",
-    "task:o1th": "node --es-module-specifier-resolution=node ./task/optimizeFirst.js"
+    "task:o1th": "node --es-module-specifier-resolution=node ./task/optimizeFirst.js",
+    "task:oa": "node --es-module-specifier-resolution=node ./task/optimizeAll.js"
   },
   "repository": {
     "type": "git",

@@ -1,0 +1,3 @@
+const svg = `<svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="21" height="22"><path d="M11 0L5.5 5.5 11 11V0zm-1 2.438v6.124L6.937 5.5 10 2.437z"/><path d="M10 10a6 6 0 100 12 6 6 0 000-12zm0 1.5a4.5 4.5 0 110 9 4.5 4.5 0 010-9z"/><path d="M14.5 16a4.5 4.5 0 11-9 0 4.5 4.5 0 119 0z" fill="#fff"/><path d="M11 3.75v1h1a8 8 0 018 8V16h1v-3.25a9 9 0 00-9-9h-1z"/><path d="M11 4.75v1.5h1v.031a6.976 6.976 0 016.469 6.469h.031V16H20v-3.25a8 8 0 00-8-8h-1z" fill="#fff"/><path d="M11 6.25v1h.5a6 6 0 016 6V16h1v-2.75a7 7 0 00-7-7H11z"/><path d="M10 2.438L6.937 5.5 10 8.563V2.436z" fill="#fff"/><path d="M6 0L.5 5.5 6 11V0zM5 2.438v6.124L1.937 5.5 5 2.437z"/><path d="M5 2.438L1.937 5.5 5 8.563V2.436z" fill="#fff"/></svg>`
+  
+export default svg
