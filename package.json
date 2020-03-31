@@ -14,7 +14,8 @@
     "start": "node --es-module-specifier-resolution=node ./index.js",
     "task:clofol": "node --es-module-specifier-resolution=node ./task/cloneFolder.js",
     "task:o1th": "node --es-module-specifier-resolution=node ./task/optimizeFirst.js",
-    "task:oa": "node --es-module-specifier-resolution=node ./task/optimizeAll.js"
+    "task:oa": "node --es-module-specifier-resolution=node ./task/optimizeAll.js",
+    "task:genidx": "node --es-module-specifier-resolution=node ./task/generateIndex.js"
   },
   "repository": {
     "type": "git",
