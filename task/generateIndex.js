@@ -40,10 +40,6 @@ const exportListRegular = fileListRegular.map(arr => {
   const file = arr[arr.length - 1].split('.')[0]
   const symbol = symbolkey.find(el => el[0].includes(file))[1]
 
-  if(!symbol) {
-    console.log(`error symbol not found for ${file}`)
-  }
-
   return `  s${symbol}`
 }).join(',\n')
 
