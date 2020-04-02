@@ -1,5 +1,6 @@
 import fs from 'fs'
 import iswasvg from '@iswa/svg'
+import symbolkey from '../iswa_id_key'
 
 const iswaPath = Object.keys(iswasvg)[0]
 const iswaTree = iswasvg[iswaPath]
@@ -22,25 +23,29 @@ recursiveList(iswaTree)
 
 const fileListRegular = fileList.filter(([str]) => !str.includes('Thinner'))
 
-const importListRegular = fileListRegular.map(arr => `import s${
-  arr[arr.length -1]
-    .split('.')[0]
-    .split('-')
-    .join('_')
-  } from '${[
+const importListRegular = fileListRegular.map(arr => {
+  const file = arr[arr.length - 1].split('.')[0]
+  const symbol = symbolkey.find(el => el[0].includes(file))[1]
+  const path = [
     '.',
     'src',
     ...arr.slice(0, arr.length - 1),
-    `${arr[arr.length -1].split('.')[0]}.js`
+    `${file}.js`
   ].join('/')
-}'`).join('\n')
 
-const exportListRegular = fileListRegular.map(arr => `  s${
-  arr[arr.length -1]
-    .split('.')[0]
-    .split('-')
-    .join('_')
-}`).join(',\n')
+  return `import s${symbol} from '${path}'`
+}).join('\n')
+
+const exportListRegular = fileListRegular.map(arr => {
+  const file = arr[arr.length - 1].split('.')[0]
+  const symbol = symbolkey.find(el => el[0].includes(file))[1]
+
+  if(!symbol) {
+    console.log(`error symbol not found for ${file}`)
+  }
+
+  return `  s${symbol}`
+}).join(',\n')
 
 fs.writeFileSync('./index.js', `${importListRegular}
 
