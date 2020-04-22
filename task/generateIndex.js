@@ -1,6 +1,6 @@
 import fs from 'fs'
 import iswasvg from '@iswa/svg'
-import symbolkey from '../iswa_id_key'
+import symbolkey from '@iswa/symbolkey'
 
 const iswaPath = Object.keys(iswasvg)[0]
 const iswaTree = iswasvg[iswaPath]
