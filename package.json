@@ -1,6 +1,6 @@
 {
   "name": "@iswa/svgojs",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "International SignWriting Alphabet as Optimized SVG Package",
   "main": "index.js",
   "type": "module",
